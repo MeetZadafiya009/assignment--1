@@ -1,0 +1,5 @@
+@mixin center-div($value:center){
+    display: flex;
+    justify-content: $value;
+    align-items: center;
+}

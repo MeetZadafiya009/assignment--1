@@ -1,0 +1,217 @@
+.main{
+    background-image: url('../images/banner-bg.jpg');
+    
+    background-size:cover;
+    height: 130vh;
+    @include center-div(center);
+    padding: 0rem 10rem;
+
+    .span-text{
+        color: $main-color;
+    }
+    .main-heading{
+        font-family: $roboto;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: bolder;    
+    }
+    .paragraph-text{
+        color: white;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family:$roboto;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    .button-link{
+        margin-right: 3rem;
+        padding:1.4rem 2.1rem;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-family: $roboto;
+    }
+    .button-link:hover{
+        color: $main-color;
+    }
+    .play-button{
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        animation: blink infinite 1s;
+    }
+}
+.slider{
+    margin-top: -10rem;
+    .layer{
+        background-color: rgb(250,250,250);
+        position:absolute;
+        transform:translateY(100%);
+        width:94.7%;
+        height:100%;
+        z-index:0;
+        border-radius:15px !important;
+        top: 0;
+        transition:all 0.7s !important;
+        .layer-heading{
+            font-family: $roboto;
+            color: $main-color;
+        }
+        i{
+            color: $main-color;
+        }
+        .ratings{
+            color: #afafaf;
+            font-weight: 400;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                text-align: center;
+                color: black;
+                font-size: 1rem;
+                font-weight: 400;
+                padding-bottom:0.5rem;
+                font-family: $roboto;
+                span{
+                    color: #afafaf;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .slide-img{
+        img{
+            border-radius:15px !important;
+        }
+    }
+    .slide-img:hover .layer{
+        background-color: rgba(250,250,250,0.9);
+        z-index: 10;
+        transform: translateY(0%);
+    }
+}
+.category{
+    position: relative;
+    z-index: 40;
+    background-color:hsl(0, 0%, 100%);
+    .category-title{
+        font-family: $roboto;
+        font-size: 300;
+        color: $main-color;
+    }
+    .category-text{
+        font-family: $roboto;
+        font-weight: 600;
+    }
+    .category-btn{
+        background-color: $main-color;
+        color: white;
+        font-family: $roboto;
+        padding:0.6rem 1.6rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: white;
+            color: $main-color;
+        }
+    }
+    .card-wrapper > div >div{
+        border: 1px solid #afafaf;
+        border-radius: 10px;
+    }
+    .contest-title{
+        font-family: $roboto;
+        font-weight: 600;
+    }
+    .available-contest{
+        font-family: $roboto;
+        color: #afafaf;
+    }
+    .browse-btn{
+        padding: 0.6rem 2rem;
+        font-family: $roboto;
+        font-weight: 500;
+        border-radius: 10px;
+        letter-spacing: 1px;
+
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+.card-section{
+    background-image: url('../images/closed-bg.jpg');
+    .contest-heading{
+        color: $main-color;
+        font-family: $roboto;
+        font-size: 300;
+    }
+    .contest-description{
+        color: $main-color;
+        font-family: $roboto;
+        font-weight: 600;
+    }
+    .participants{
+        font-weight: 600;
+    }
+    .artists{
+        font-weight: 500;
+        color: #afafaf;
+    }
+    .browse-btn{
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 0.6rem 2rem;
+        border-radius: 10px;
+    }
+    .browse-btn:hover{
+        color: white;
+    }
+}
+.plan-section{
+    .plan-wrapper{
+        border: 1px solid #afafaf;
+        .plan-text-list{
+            list-style: none;
+            li{
+                margin-bottom: 0.5rem;
+            }
+        }
+        .plan-btn{
+            border-radius: 10px;
+            font-weight: 500;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    
+}
+.text-main{
+    color: $main-color;
+}
+.text-second{
+    color:$secondary-color;
+}
+.center-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes blink{
+    0%{
+        color: white;
+    }
+    50%{
+        color: $main-color;
+    }
+    100%{
+        color: white;
+    }
+}

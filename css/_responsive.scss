@@ -1,0 +1,144 @@
+@media screen and (max-width:1370px){
+    .menu{
+        width: 75%;
+        li{
+            padding: 0 !important;
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+ 
+    .main{
+        .main-heading{
+            font-size: 4rem;
+        }
+    }
+    .menu{
+        width:80% !important;
+    }
+    .slider{
+        .third-slide{
+            display: none
+        }
+        .layer{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .header{
+        .hello{
+            width: 100vw !important;
+            display: none;
+        }
+        .menu{
+            width: 100% !important;
+            padding-left:0rem !important;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .main{
+        padding: 0 2rem;
+        .main-heading{
+            font-size: 3rem !important;
+        }
+        .button-link{
+            padding:1rem 1.8rem;
+            font-size: 1.2rem;
+        }
+        
+    }
+    
+    .card-section{
+        .card-center{
+            @include center-div();
+        }
+        .card-center > div{
+            width: 75% !important;
+        }
+    }
+    .slider{
+        .second-slide{
+            display: none
+        }
+        .row-slider{
+            justify-content: center
+        }
+        .layer{
+            width: 96%;
+        }
+    }
+    .plan-card-wrapper{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px) {
+    .main{
+        .button-link{
+            padding:0.8rem 1rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .main{
+        .paragraph-text{
+            font-size: 1rem !important;
+        }
+        .play-button{
+            font-size: 0.9rem;
+        }
+        .button-link{
+            padding:0.6rem 0.8rem;
+            font-size: 1.1rem;
+        }
+    }
+    .category{
+        .card-wrapper{
+            justify-content: center !important;
+        }
+        .category-text{
+            font-size: 1.1rem !important;
+        }
+    }
+    .card-section{
+        .card-center > div{
+            width: 85% !important;
+        }
+    }
+    .slider{
+       
+        margin-top: -6rem;
+        .row-slider{
+            justify-content: center
+        }
+       
+    }   
+}
+@media screen and (max-width:400px){
+    .slider{
+        padding-top: -4rem;
+    }
+    .main{
+        height: 110vh;
+        .main-heading{
+            font-size: 2rem !important;
+        }
+        .button-link{
+            padding:0.4rem 0.6rem;
+            font-size: 1rem;
+            margin-right: 1.5rem;
+        }
+    }
+    .main > div{
+        margin-top: -2rem;
+    }
+    .category{
+        .category-btn{
+            padding:0.4rem 0.5rem;
+            font-size: 0.9rem;
+        }
+    }
+    
+}

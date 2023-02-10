@@ -1,0 +1,49 @@
+.header{
+    background-color: white !important;
+    .logo{
+        width:200px;
+    }
+    nav{
+        .hello{
+            .drop-down-menu{
+               li{
+                    a{
+                        color: black !important;
+                    }
+                }
+            }
+        }
+        .menu{
+            width: 70%;
+        }
+        .menu li{
+            padding-left: 1rem;
+            display: inline-block;
+            text-align: center;
+            padding-right:1rem ;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-family: $roboto;
+            font-weight: 400;
+        }
+        .menu li a{
+            text-align: center !important;
+            color: white;
+            letter-spacing: 1px;
+        }
+        .sign-up{
+            font-family: $roboto;
+            font-weight:500;
+            font-size: 1.2rem;
+            padding:0.75rem 2.5rem;
+            border-radius: 15px;
+        }
+        .sign-up:hover{
+            color: white !important;
+        }
+    }
+    .hello{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
