@@ -76,6 +76,12 @@ body {
 
 .slider {
   margin-top: -10rem; }
+  .slider .btn-prev button, .slider .btn-next button {
+    border-radius: 50%;
+    background-color: rgba(0, 189, 254, 0.7);
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem; }
   .slider .layer {
     background-color: #fafafa;
     position: absolute;
@@ -300,6 +306,9 @@ body {
   .category .category-btn {
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem; } }
+@media (width: 1024px) and (height: 600px) {
+  .slider {
+    margin-top: -5rem; } }
 .btn:focus {
   box-shadow: none !important; }
 

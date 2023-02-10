@@ -45,6 +45,13 @@
 }
 .slider{
     margin-top: -10rem;
+    .btn-prev button,.btn-next button{
+        border-radius: 50%;
+        background-color:rgba(0, 189, 254,0.7);
+        border: none;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
     .layer{
         background-color: rgb(250,250,250);
         position:absolute;
